@@ -42,7 +42,7 @@ export const WidgetList = (props: IWidgetListProps) => {
 
   return (
     <div>
-      <AddModal showModal={showModal} handleClose={handleClose}></AddModal>
+      <AddModal showModal={showModal} handleClose={handleClose} widgets={props.widgets}></AddModal>
       <Row>
         {props.widgets.map(renderHelper)}
         <WidgetContainer>
